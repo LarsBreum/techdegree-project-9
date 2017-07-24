@@ -1,0 +1,31 @@
+* {
+   box-sizing: border-box;
+}
+
+body {
+   font-family: $font-family--primary;
+   font-size: $base__font-size;
+   line-height: $base__line;
+   color: $god-gray;
+}
+
+a {
+   text-decoration: none;
+
+   &:hover,
+   &:focus {
+      outline: none;
+   }
+}
+
+p {
+
+}
+
+img {
+   min-width: 100%;
+}
+
+ul {
+   list-style: none;
+}

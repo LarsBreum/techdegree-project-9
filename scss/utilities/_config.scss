@@ -1,0 +1,43 @@
+/* ======================================
+Global Config
+========================================= */
+
+// Font Stacks
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+
+$font-family--primary   : 'Open Sans', sans-serif;
+
+// Font Weights
+
+$font-weight--light       : 300;
+$font-weight--normal      : 400;
+$font-weight--semi-bold   : 600;
+$font-weight--bold        : 700;
+
+// Discriptive Base Colors
+
+$white   : #fff;
+$black   : #000;
+
+$ship-cove     : #7477BF;
+$mulled-wine   : #4D4C72;
+$de-york       : #81c98f;
+$god-gray      : #090909;
+
+// Functional Colors
+
+$color-primary   : $ship-cove;
+$color-secondary : $mulled-wine;
+$color-highlight : $de-york;
+$color-text      : $god-gray;
+
+// Text
+
+$base__font-size   : 16px;
+$base__line        : 1.5;
+
+// Breakpoints
+
+$breakpoint--tablet    : 768px;
+$breakpoint--desktop   : 1024px;
