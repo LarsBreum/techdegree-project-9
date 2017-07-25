@@ -1,0 +1,23 @@
+.navbar-top {
+   display: flex;
+   align-items: center;
+
+   border-top: rem(1.5px) solid $color-secondary;
+
+   &__item {
+
+      padding: rem(10px) rem(15px) 0;
+
+      &--notification {
+         order: 1;
+         @include mq(tablet){
+            order: 0;
+            border-right: rem(1.5px) solid $color-secondary;
+         }
+      }
+   }
+
+   @include mq(tablet){
+      border-top: none;
+   }
+}

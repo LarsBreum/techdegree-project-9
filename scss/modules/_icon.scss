@@ -1,0 +1,20 @@
+.icon {
+
+   &--bell {
+      width: rem(35px);
+      margin-left: rem(10px);
+
+      &__container {
+         position: relative;
+      }
+      &__circle {
+         position: absolute;
+         width: 8px;
+         height: 8px;
+         border-radius: 50%;
+         top: -4px;
+         right: 0;
+         background: $color-highlight;
+      }
+   }
+}

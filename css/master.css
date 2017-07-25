@@ -427,18 +427,22 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  color: #090909; }
+  color: #090909;
+  margin: 0; }
+
+h1 {
+  margin: 0; }
 
 a {
+  color: #7477BF;
   text-decoration: none; }
   a:hover, a:focus {
     outline: none; }
 
-img {
-  min-width: 100%; }
-
 ul {
-  list-style: none; }
+  list-style: none;
+  margin: 0;
+  padding: 0; }
 
 /* =================================
 Layout
@@ -447,10 +451,91 @@ Layout
 Extends
 ==================================== */
 /* =================================
+Main Header
+==================================== */
+.main-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background: #7477BF; }
+  @media only screen and (min-width: 768px) {
+    .main-header {
+      flex-direction: row;
+      justify-content: space-between; } }
+
+/* =================================
 Modules
 ==================================== */
 /* =================================
 Extends
 ==================================== */
+/* =================================
+Toop Navbar
+==================================== */
+.navbar-top {
+  display: flex;
+  align-items: center;
+  border-top: 0.09375rem solid #4D4C72; }
+  .navbar-top__item {
+    padding: 0.625rem 0.9375rem 0; }
+    .navbar-top__item--notification {
+      order: 1; }
+      @media only screen and (min-width: 768px) {
+        .navbar-top__item--notification {
+          order: 0;
+          border-right: 0.09375rem solid #4D4C72; } }
+  @media only screen and (min-width: 768px) {
+    .navbar-top {
+      border-top: none; } }
+
+/* =================================
+Logo
+==================================== */
+.site-logo {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff; }
+  .site-logo span {
+    font-weight: 300; }
+  @media only screen and (min-width: 768px) {
+    .site-logo {
+      margin-bottom: 0; } }
+
+/* =================================
+Icon
+==================================== */
+.icon--bell {
+  width: 2.1875rem;
+  margin-left: 0.625rem; }
+  .icon--bell__container {
+    position: relative; }
+  .icon--bell__circle {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    top: -4px;
+    right: 0;
+    background: #81c98f; }
+
+/* =================================
+Images
+==================================== */
+.img--avatar {
+  width: 40px;
+  border-radius: 50%; }
+
+/* =================================
+Profile
+==================================== */
+.profile {
+  display: flex;
+  align-items: center; }
+  .profile__item {
+    margin-left: 0.3125rem; }
+    .profile__item--name {
+      color: #fff; }
 
 /*# sourceMappingURL=master.css.map */

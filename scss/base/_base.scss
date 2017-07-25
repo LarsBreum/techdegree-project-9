@@ -7,9 +7,15 @@ body {
    font-size: $base__font-size;
    line-height: $base__line;
    color: $god-gray;
+   margin: 0;
+}
+
+h1 {
+   margin: 0;
 }
 
 a {
+   color: $color-primary;
    text-decoration: none;
 
    &:hover,
@@ -23,9 +29,11 @@ p {
 }
 
 img {
-   min-width: 100%;
+
 }
 
 ul {
    list-style: none;
+   margin: 0;
+   padding: 0;
 }
