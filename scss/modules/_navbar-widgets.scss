@@ -1,0 +1,29 @@
+.navbar-widgets {
+   background: $color-secondary;
+
+   &__list {
+      display: flex;
+      justify-content: center;
+
+      @include mq(desktop) {
+         flex-direction: column;
+      }
+   }
+
+   &__item {
+      padding: 1.2rem rem(18px);
+
+      @include mq(desktop) {
+         padding: rem(18px) 1.2rem;
+      }
+
+      &--active {
+         border-top: rem(2.5px) solid $color-highlight;
+
+         @include mq(desktop) {
+            border-top: none;
+            border-left: rem(2.5px) solid $color-highlight;
+         }
+      }
+   }
+}

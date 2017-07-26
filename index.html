@@ -27,14 +27,43 @@
             </li>
          </ul>
       </header>
-
-      <main>
-         <div class="nav">
-
+      <main class="main">
+         <div class="navbar-widgets">
+            <ul class="navbar-widgets__list">
+               <li class="navbar-widgets__item navbar-widgets__item--active">
+                  <a class="navbar-widgets__link" href="#">
+                     <img class="icon" src="images/icons/icon-dashboard.svg" alt="dashboard">
+                  </a>
+               </li>
+               <li class="navbar-widgets__item">
+                  <a class="navbar-widgets__link" href="#">
+                     <img class="icon" src="images/icons/icon-members.svg" alt="members">
+                  </a>
+               </li>
+               <li class="navbar-widgets__item">
+                  <a class="navbar-widgets__link" href="#">
+                     <img class="icon" src="images/icons/icon-visits.svg" alt="visits">
+                  </a>
+               </li>
+               <li class="navbar-widgets__item">
+                  <a class="navbar-widgets__link" href="#">
+                     <img class="icon" src="images/icons/icon-settings.svg" alt="settings">
+                  </a>
+               </li>
+            </ul>
          </div>
 
          <div class="dashboard">
+            <div class="info-bar">
+               <div class="widget-name">
+                  Dashboard
+               </div>
 
+               <form class="form-search" mathod="POST" action="#">
+                  <label class="form-search__label--hidden" for="search">Search</label>
+                  <input class="form-search__input" type="text" placeholder="Search" id="search">
+               </form>
+            </div>
          </div>
       </main>
    </body>

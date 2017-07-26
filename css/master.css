@@ -424,10 +424,13 @@ Base
   box-sizing: border-box; }
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  color: #090909;
+  color: #676666;
   margin: 0; }
 
 h1 {
@@ -466,13 +469,24 @@ Main Header
       padding: 1rem; } }
 
 /* =================================
+Main
+==================================== */
+.main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; }
+  @media only screen and (min-width: 1024px) {
+    .main {
+      flex-direction: row; } }
+
+/* =================================
 Modules
 ==================================== */
 /* =================================
 Extends
 ==================================== */
 /* =================================
-Toop Navbar
+Top Navbar
 ==================================== */
 .navbar-top {
   display: flex;
@@ -510,19 +524,21 @@ Logo
 /* =================================
 Icon
 ==================================== */
-.icon--bell {
-  width: 2.1875rem;
-  margin-left: 0.625rem; }
-  .icon--bell__container {
-    position: relative; }
-  .icon--bell__circle {
-    position: absolute;
-    top: -4px;
-    right: 0;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: #81c98f; }
+.icon {
+  width: 2.75rem; }
+  .icon--bell {
+    width: 2.1875rem;
+    margin-left: 0.625rem; }
+    .icon--bell__container {
+      position: relative; }
+    .icon--bell__circle {
+      position: absolute;
+      top: -4px;
+      right: 0;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #81c98f; }
 
 /* =================================
 Images
@@ -542,5 +558,79 @@ Profile
     margin-left: 0.3125rem; }
     .profile__item--name {
       color: #fff; }
+
+/* =================================
+Widgets Navbar
+==================================== */
+.navbar-widgets {
+  background: #4D4C72; }
+  .navbar-widgets__list {
+    display: flex;
+    justify-content: center; }
+    @media only screen and (min-width: 1024px) {
+      .navbar-widgets__list {
+        flex-direction: column; } }
+  .navbar-widgets__item {
+    padding: 1.2rem 1.125rem; }
+    @media only screen and (min-width: 1024px) {
+      .navbar-widgets__item {
+        padding: 1.125rem 1.2rem; } }
+    .navbar-widgets__item--active {
+      border-top: 0.15625rem solid #81c98f; }
+      @media only screen and (min-width: 1024px) {
+        .navbar-widgets__item--active {
+          border-top: none;
+          border-left: 0.15625rem solid #81c98f; } }
+
+/* =================================
+Dashboard
+==================================== */
+.dashboard {
+  flex-grow: 1; }
+
+/* =================================
+Widget name
+==================================== */
+.widget-name {
+  padding: 1rem;
+  font-size: 1.3rem; }
+
+/* =================================
+Search form
+==================================== */
+.form-search {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-bottom: 1.3px solid #c8c8c8;
+  border-left: 1.3px solid #c8c8c8;
+  background: #fbfbfb; }
+  .form-search__label--hidden {
+    display: none; }
+  .form-search__input {
+    width: 90%;
+    margin-right: 1rem;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: .9rem;
+    color: #626262;
+    background-image: url("../images/icons/icon-search.svg");
+    background-size: 26px;
+    background-position: 95% 50%;
+    background-repeat: no-repeat; }
+    @media only screen and (min-width: 768px) {
+      .form-search__input {
+        width: 50%; } }
+    @media only screen and (min-width: 1024px) {
+      .form-search__input {
+        width: 35%; } }
+
+/* =================================
+Info bar
+==================================== */
+.info-bar {
+  display: flex; }
 
 /*# sourceMappingURL=master.css.map */
