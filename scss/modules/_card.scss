@@ -1,0 +1,30 @@
+.card {
+   flex: 1 100%;
+
+   padding-left: 1rem;
+   padding-right: 1rem;
+   border-bottom: 1.3px solid darken($gray, 20%);
+
+   &--small {
+      @extend .card;
+      @include mq(tablet) {
+         flex: 1 50%;
+      }
+   }
+
+   &--primary {
+
+   }
+
+   &--border-left {
+      @include mq(tablet) {
+         border-left: 1.3px solid darken($gray, 20%);
+      }
+   }
+
+   &__header {
+      font-size: 1rem;
+      font-weight: $font-weight--normal;
+      text-transform: uppercase;
+   }
+}
