@@ -533,6 +533,8 @@ Icon
 ==================================== */
 .icon {
   width: 2.75rem; }
+  .icon--social {
+    min-width: 78px; }
   .icon--bell {
     width: 2.1875rem;
     margin-left: 0.625rem; }
@@ -718,5 +720,40 @@ Navbar-traffic
     @media only screen and (min-width: 1024px) {
       .canvas-container--doughnut {
         max-width: 50%; } }
+
+/* =================================
+Social stats
+==================================== */
+.social-stats {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2.7rem; }
+  @media only screen and (min-width: 768px) {
+    .social-stats {
+      flex-direction: row;
+      justify-content: space-between; } }
+  .social-stats__item {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    background: #fbfbfb;
+    border: 1.3px solid #c8c8c8;
+    border-radius: 10px; }
+    @media only screen and (min-width: 768px) {
+      .social-stats__item {
+        margin-left: .5rem;
+        margin-right: .5rem; } }
+  .social-stats__header {
+    margin: 0;
+    font-size: 1rem;
+    color: #7477BF; }
+  .social-stats__amount {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 300; }
+  .social-stats__content {
+    padding: .8rem 1.5rem; }
 
 /*# sourceMappingURL=master.css.map */

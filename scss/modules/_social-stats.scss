@@ -1,0 +1,46 @@
+.social-stats {
+   display: flex;
+   flex-direction: column;
+
+   margin-bottom: 2.7rem;
+
+   @include mq(tablet) {
+      flex-direction: row;
+      justify-content: space-between;
+   }
+
+   &__item {
+      flex: 1;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      margin-top: 1rem;
+
+      background: $gray;
+      border: 1.3px solid darken($gray, 20%);
+      border-radius: 10px;
+
+      @include mq(tablet) {
+         margin-left: .5rem;
+         margin-right: .5rem;
+      }
+   }
+
+   &__header {
+      margin: 0;
+      font-size: 1rem;
+      color: $color-primary;
+   }
+
+   &__amount {
+      margin: 0;
+      font-size: 2.5rem;
+      font-weight: $font-weight--light;
+   }
+
+   &__content {
+      padding: .8rem 1.5rem;
+   }
+}
