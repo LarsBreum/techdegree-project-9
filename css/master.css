@@ -712,5 +712,8 @@ Navbar-traffic
 ==================================== */
 .canvas-container {
   position: relative; }
+  .canvas-container--doughnut {
+    margin: 0 auto;
+    width: 70%; }
 
 /*# sourceMappingURL=master.css.map */

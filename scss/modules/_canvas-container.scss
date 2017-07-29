@@ -1,3 +1,8 @@
 .canvas-container {
    position: relative;
+
+   &--doughnut {
+      margin: 0 auto;
+      width: 70%;
+   }
 }
