@@ -1,9 +1,10 @@
 .canvas-container {
    width: 98%;
-   max-width: 1200px;
+   max-width: 300px;
    margin: 0 auto 1.5rem;
 
    @include mq(desktop) {
+      max-width: 1200px;
       margin-top: 2rem;
       margin-bottom: 3rem;
    }
