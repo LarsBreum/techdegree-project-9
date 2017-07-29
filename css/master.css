@@ -582,10 +582,10 @@ Widgets Navbar
     @media only screen and (min-width: 1024px) {
       .navbar-widgets__item {
         padding: 1.125rem 1.2rem; } }
-    .navbar-widgets__item--active {
+    .navbar-widgets__item:hover, .navbar-widgets__item:focus, .navbar-widgets__item--active {
       border-top: 0.15625rem solid #81c98f; }
       @media only screen and (min-width: 1024px) {
-        .navbar-widgets__item--active {
+        .navbar-widgets__item:hover, .navbar-widgets__item:focus, .navbar-widgets__item--active {
           border-top: none;
           border-left: 0.15625rem solid #81c98f; } }
 
@@ -658,5 +658,52 @@ Card
     font-size: 1rem;
     font-weight: 400;
     text-transform: uppercase; }
+
+/* =================================
+Canvas container
+==================================== */
+.canvas-container {
+  width: 98%;
+  max-width: 1200px;
+  margin: 0 auto 1.5rem; }
+  @media only screen and (min-width: 1024px) {
+    .canvas-container {
+      margin-top: 2rem;
+      margin-bottom: 3rem; } }
+  .canvas-container__header {
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase; }
+  .canvas-container__nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
+    @media only screen and (min-width: 768px) {
+      .canvas-container__nav {
+        flex-direction: row;
+        align-items: center; } }
+
+/* =================================
+Navbar-traffic
+==================================== */
+.navbar-traffic {
+  display: flex;
+  justify-content: space-between; }
+  @media only screen and (min-width: 768px) {
+    .navbar-traffic__item {
+      margin-left: .5rem;
+      margin-right: .5rem; } }
+  .navbar-traffic__link {
+    display: block;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: .9rem;
+    font-weight: 700;
+    color: #8d8c8c; }
+    .navbar-traffic__link:hover, .navbar-traffic__link:focus, .navbar-traffic__link--active {
+      background-color: #81c98f;
+      color: #fbfbfb; }
 
 /*# sourceMappingURL=master.css.map */

@@ -1,0 +1,32 @@
+.canvas-container {
+   width: 98%;
+   max-width: 1200px;
+   margin: 0 auto 1.5rem;
+
+   @include mq(desktop) {
+      margin-top: 2rem;
+      margin-bottom: 3rem;
+   }
+
+   &__header {
+      font-size: 1rem;
+      font-weight: $font-weight--normal;
+      text-transform: uppercase;
+
+
+   }
+
+   &__nav {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+
+      @include mq(tablet) {
+         flex-direction: row;
+         align-items: center;
+      }
+   }
+}

@@ -1,0 +1,28 @@
+.navbar-traffic {
+   display: flex;
+   justify-content: space-between;
+
+   &__item {
+      @include mq(tablet) {
+         margin-left: .5rem;
+         margin-right: .5rem;
+      }
+   }
+
+   &__link {
+      display: block;
+      padding: 5px 10px;
+      border-radius: 15px;
+
+      font-size: .9rem;
+      font-weight: $font-weight--bold;
+      color: lighten($color-text, 15%);
+
+      &:hover,
+      &:focus,
+      &--active {
+         background-color: $color-highlight;
+         color: $gray;
+      }
+   }
+}

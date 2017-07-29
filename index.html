@@ -67,7 +67,20 @@
 
             <div class="panel">
                <div class="card card--primary">
-                  <h2 class="card__header">Traffic</h2>
+                  <div class="canvas-container">
+                     <div class="canvas-container__nav">
+                        <h2 class="canvas-container__header">Traffic</h2>
+
+                        <ul class="navbar-traffic">
+                           <li class="navbar-traffic__item"><a class="navbar-traffic__link" href="#">Hourly</a></li>
+                           <li class="navbar-traffic__item"><a class="navbar-traffic__link" href="#">Daily</a></li>
+                           <li class="navbar-traffic__item"><a class="navbar-traffic__link navbar-traffic__link--active" href="#">Weekly</a></li>
+                           <li class="navbar-traffic__item"><a class="navbar-traffic__link" href="#">Monthly</a></li>
+                        </ul>
+                     </div>
+
+                     <canvas id="chartTraffic"></canvas>
+                  </div>
                </div>
 
                <div class="card--small">
@@ -100,5 +113,8 @@
             </div>
          </div>
       </main>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+      <script src="js/charts.js"></script>
    </body>
 </html>

@@ -17,6 +17,8 @@
          padding: rem(18px) 1.2rem;
       }
 
+      &:hover,
+      &:focus,
       &--active {
          border-top: rem(2.5px) solid $color-highlight;
 
