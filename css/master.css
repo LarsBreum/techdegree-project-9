@@ -650,7 +650,8 @@ Card
   border-bottom: 1.3px solid #c8c8c8; }
   @media only screen and (min-width: 768px) {
     .card--small {
-      flex: 1 50%; } }
+      flex: 1 50%;
+      max-width: 50%; } }
   @media only screen and (min-width: 768px) {
     .card--border-left {
       border-left: 1.3px solid #c8c8c8; } }

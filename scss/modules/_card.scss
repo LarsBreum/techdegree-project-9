@@ -9,6 +9,7 @@
       @extend .card;
       @include mq(tablet) {
          flex: 1 50%;
+         max-width: 50%;
       }
    }
 
