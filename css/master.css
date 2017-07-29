@@ -662,26 +662,26 @@ Card
 /* =================================
 Canvas container
 ==================================== */
-.canvas-container {
+.widget {
   width: 98%;
   margin: 0 auto 1.5rem; }
   @media only screen and (min-width: 1024px) {
-    .canvas-container {
+    .widget {
       max-width: 1200px;
       margin-top: 2rem;
       margin-bottom: 3rem; } }
-  .canvas-container__header {
+  .widget__header {
     font-size: 1rem;
     font-weight: 400;
     text-transform: uppercase; }
-  .canvas-container__nav {
+  .widget__nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-top: 1rem;
     margin-bottom: 1rem; }
     @media only screen and (min-width: 768px) {
-      .canvas-container__nav {
+      .widget__nav {
         flex-direction: row;
         align-items: center; } }
 
@@ -705,5 +705,11 @@ Navbar-traffic
     .navbar-traffic__link:hover, .navbar-traffic__link:focus, .navbar-traffic__link--active {
       background-color: #81c98f;
       color: #fbfbfb; }
+
+/* =================================
+Navbar-traffic
+==================================== */
+.canvas-container {
+  position: relative; }
 
 /*# sourceMappingURL=master.css.map */

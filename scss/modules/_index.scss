@@ -61,9 +61,14 @@ Card
 /* =================================
 Canvas container
 ==================================== */
-@import "canvas-container";
+@import "widget";
 
 /* =================================
 Navbar-traffic
 ==================================== */
 @import "navbar-traffic";
+
+/* =================================
+Navbar-traffic
+==================================== */
+@import "canvas-container";
