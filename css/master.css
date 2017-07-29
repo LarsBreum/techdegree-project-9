@@ -714,6 +714,9 @@ Navbar-traffic
   position: relative; }
   .canvas-container--doughnut {
     margin: 0 auto;
-    width: 70%; }
+    max-width: 60%; }
+    @media only screen and (min-width: 1024px) {
+      .canvas-container--doughnut {
+        max-width: 50%; } }
 
 /*# sourceMappingURL=master.css.map */

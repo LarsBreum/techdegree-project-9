@@ -3,6 +3,12 @@
 
    &--doughnut {
       margin: 0 auto;
-      width: 70%;
+
+      max-width: 60%;
+
+      @include mq(desktop) {
+         max-width: 50%;
+      }
+
    }
 }
