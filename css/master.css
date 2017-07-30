@@ -755,7 +755,8 @@ Social stats
     @media only screen and (min-width: 768px) {
       .social-stats__item {
         margin-left: .5rem;
-        margin-right: .5rem; } }
+        margin-right: .5rem;
+        padding: .5rem 1rem; } }
   .social-stats__header {
     margin: 0;
     font-size: 1rem;
