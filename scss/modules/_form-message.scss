@@ -1,5 +1,4 @@
 .form-message {
-
    margin-bottom: 3rem;
 
    &__legend {
@@ -8,6 +7,12 @@
 
    &__label {
       display: none;
+      margin-top: 2rem;
+      margin-bottom: 2.3rem;
+
+
+      font-size: .9rem;
+      color: darken($gray, 55%);
    }
 
    &__input {
@@ -24,12 +29,41 @@
       &--textarea {
          @extend .form-message__input;
 
-         height: 120px;
+         height: 130px;
          resize: none;
       }
 
       &::placeholder {
          color: darken($gray, 20%);
       }
+
+      &--select {
+         @extend .form-message__input;
+         padding: 6px;
+         height: 40px;
+         border-radius: 2px;
+         color: darken($gray, 20%);
+      }
+   }
+
+   &__text {
+      display: inline-block !important;
+      width: 200px !important;
+      margin-right: 10px;
+   }
+
+   &__switch {
+      display: inline-block !important;
+      max-width: 100px !important;
+   }
+}
+
+// Toggle switch customization
+.switch-ios.switch-light input:checked ~ span {
+   border-color: $color-primary !important;
+   box-shadow: inset 0 0 0 30px $color-primary !important;
+
+   a {
+      border-color: $color-secondary !important;
    }
 }

@@ -10,5 +10,15 @@
    font-size: .9rem;
    text-transform: uppercase;
    color: $white;
-   background: $color-primary;   
+   background: $color-primary;
+
+   &--small {
+      @extend .btn;
+      width: calc(50% - 1rem);
+   }
+
+   &--gray {
+      background: lighten($god-gray, 30%);
+      margin-left: 2rem;
+   }
 }
