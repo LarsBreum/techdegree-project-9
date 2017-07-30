@@ -4,6 +4,7 @@
    padding-left: 1rem;
    padding-right: 1rem;
    border-bottom: 1.3px solid darken($gray, 20%);
+   max-width: 100%;
 
    &--small {
       @extend .card;
