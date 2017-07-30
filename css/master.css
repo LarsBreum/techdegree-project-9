@@ -17,6 +17,9 @@ Helper functions
 /* =================================
 Helpers
 ==================================== */
+.no-flex-wrap {
+  flex-wrap: nowrap; }
+
 /* =================================
 Mixings
 ==================================== */
@@ -769,6 +772,7 @@ Social stats
 ==================================== */
 .members-info__item {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
