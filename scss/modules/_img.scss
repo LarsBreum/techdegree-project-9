@@ -4,4 +4,10 @@
       border: 3.5px solid $color-secondary;
       border-radius: 50%;
    }
+
+   &--member {
+      @extend .img--avatar;
+      width: 65px;
+      max-width: 15%;
+   }
 }

@@ -1,0 +1,53 @@
+.members-info {
+
+   &__item {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 1.3px solid darken($gray, 20%);
+
+      &:last-child {
+         border-bottom: none;
+      }
+   }
+
+   &__data {
+      margin-left: .7rem;
+      max-width: calc(85% - .7rem);
+   }
+
+   &__activity {
+      margin-left: .7rem;
+      max-width: calc(75% - .7rem);
+   }
+
+   &__name {
+      margin: 0;
+      font-weight: $font-weight--normal;
+   }
+
+   &__email,
+   &__action {
+      margin: 0;
+
+      font-weight: $font-weight--light;
+      font-size: .9rem;
+   }
+
+   &__time  {
+      @extend .members-info__email;
+      font-size: .8rem;
+      color: darken($gray, 90%);
+   }
+
+   &__date-registered {
+      margin-left: auto;
+
+      font-weight: $font-weight--light;
+      font-size: .88rem;
+      color: darken($gray, 40%);
+   }
+}

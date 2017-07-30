@@ -6,6 +6,12 @@
       min-width: 78px;
    }
 
+   &--next {
+      width: 30px;
+      max-width: 10%;
+      margin-left: auto;
+   }
+
    &--bell {
       width: rem(35px);
 
