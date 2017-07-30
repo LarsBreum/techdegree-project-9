@@ -142,7 +142,7 @@
                         <img class="img--member" src="images/members/member-1.jpg" alt="member avatar image">
                         <div class="members-info__data">
                            <h4 class="members-info__name">Victoria Chambers</h4>
-                           <a class="members-info__email" href="mailto:victoria.chambers80@example.com">victoria.chambers80@example.com</a>
+                           <a class="members-info__email" href="mailto:victoria.chambers@example.com">victoria.chambers@example.com</a>
                         </div>
                         <p class="members-info__date-registered">10/15/17</p>
                      </div>
@@ -228,6 +228,19 @@
 
                <div class="card--small">
                   <h2 class="card__header">Message user</h2>
+
+                  <form class="form-message" action="index.html" method="post" role="form">
+
+                     <legend class="form-message__legend">message user</legend>
+
+                     <label class="form-message__label" for="user">Search for User</label>
+                     <input class="form-message__input" id="user" type="text" name="textfield" placeholder="Seach for User">
+
+                     <label class="form-message__label" for="message">Message for User</label>
+                     <textarea class="form-message__input--textarea" id="message" name="name" placeholder="Message for User"></textarea>
+
+                     <button class="btn" type="submit">Send</button>
+                  </form>
                </div>
 
                <div class="card--small card--border-left">

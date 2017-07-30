@@ -774,6 +774,7 @@ Social stats
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  min-height: 100px;
   padding-top: 1rem;
   padding-bottom: 1rem;
   border-bottom: 1.3px solid #c8c8c8; }
@@ -804,5 +805,42 @@ Social stats
   font-weight: 300;
   font-size: .88rem;
   color: #959595; }
+
+/* =================================
+Form message
+==================================== */
+.form-message {
+  margin-bottom: 3rem; }
+  .form-message__legend {
+    display: none; }
+  .form-message__label {
+    display: none; }
+  .form-message__input, .form-message__input--textarea {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 10px;
+    border: 1.3px solid #ccc;
+    border-radius: 4px;
+    font-size: .9rem;
+    color: #6f6f6f; }
+    .form-message__input--textarea {
+      height: 120px;
+      resize: none; }
+    .form-message__input::placeholder, .form-message__input--textarea::placeholder {
+      color: #c8c8c8; }
+
+/* =================================
+Buttons
+==================================== */
+.btn {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: .9rem;
+  text-transform: uppercase;
+  color: #fff;
+  background: #7477BF; }
 
 /*# sourceMappingURL=master.css.map */

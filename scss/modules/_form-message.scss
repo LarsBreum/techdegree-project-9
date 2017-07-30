@@ -1,0 +1,35 @@
+.form-message {
+
+   margin-bottom: 3rem;
+
+   &__legend {
+      display: none;
+   }
+
+   &__label {
+      display: none;
+   }
+
+   &__input {
+      width: 100%;
+
+      margin-bottom: 1rem;
+      padding: 10px;
+      border: 1.3px solid #ccc;
+      border-radius: 4px;
+
+      font-size: .9rem;
+      color: darken($gray, 55%);
+
+      &--textarea {
+         @extend .form-message__input;
+
+         height: 120px;
+         resize: none;
+      }
+
+      &::placeholder {
+         color: darken($gray, 20%);
+      }
+   }
+}
