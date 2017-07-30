@@ -539,9 +539,7 @@ Icon
   .icon--social {
     min-width: 78px; }
   .icon--next {
-    width: 30px;
-    max-width: 10%;
-    margin-left: auto; }
+    width: 100%; }
   .icon--bell {
     width: 2.1875rem;
     margin-left: 0.625rem; }
@@ -797,6 +795,10 @@ Social stats
 .members-info__time {
   font-size: .8rem;
   color: #161616; }
+.members-info__link--more {
+  width: 30px;
+  max-width: 10%;
+  margin-left: auto; }
 .members-info__date-registered {
   margin-left: auto;
   font-weight: 300;

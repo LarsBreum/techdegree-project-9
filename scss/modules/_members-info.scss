@@ -43,6 +43,14 @@
       color: darken($gray, 90%);
    }
 
+   &__link {
+      &--more {
+         width: 30px;
+         max-width: 10%;
+         margin-left: auto;
+      }
+   }
+
    &__date-registered {
       margin-left: auto;
 
