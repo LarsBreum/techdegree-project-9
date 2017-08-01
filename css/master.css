@@ -669,7 +669,7 @@ Card
       border-left: 1.3px solid #c8c8c8; } }
   .card__header {
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 600;
     text-transform: uppercase; }
 
 /* =================================
@@ -869,5 +869,28 @@ Buttons
   .btn--gray {
     background: #b3b3b3;
     margin-left: 2rem; }
+
+/* =================================
+Notification
+==================================== */
+.notification {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 98%;
+  margin: 1.5rem auto 0;
+  padding: 5px 1rem;
+  border-radius: 8px;
+  background: #7477BF; }
+  .notification__copy {
+    color: #fff;
+    font-weight: 300; }
+  .notification__close-button {
+    color: #fff;
+    margin-left: 1rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: display 2s; }
 
 /*# sourceMappingURL=master.css.map */

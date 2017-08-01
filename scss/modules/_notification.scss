@@ -1,0 +1,27 @@
+.notification {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+   width: 98%;
+   margin: 1.5rem auto 0;
+   padding: 5px 1rem;
+   border-radius: 8px;
+
+   background: $color-primary;
+
+   &__copy {
+      color: $white;
+      font-weight: $font-weight--light;
+   }
+
+   &__close-button {
+      color: $white;
+      margin-left: 1rem;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+
+      transition: display 2s;
+   }
+}
