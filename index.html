@@ -6,6 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="css/master.css">
       <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/css-toggle-switch/latest/toggle-switch.css" />
+      <link rel="stylesheet" href="js/sweetalert/sweetalert.css">
    </head>
    <body>
       <header class="main-header">
@@ -241,12 +242,12 @@
                      <legend class="form-message__legend">message user</legend>
 
                      <label class="form-message__label" for="user">Search for User</label>
-                     <input class="form-message__input" id="user" type="text" name="textfield" placeholder="Seach for User">
+                     <input class="form-message__input" id="inputSelectUser" id="user" type="text" name="textfield" placeholder="Seach for User">
 
                      <label class="form-message__label" for="message">Message for User</label>
-                     <textarea class="form-message__input--textarea" id="message" name="name" placeholder="Message for User"></textarea>
+                     <textarea class="form-message__input--textarea" id="inputMessage" name="name" placeholder="Message for User"></textarea>
 
-                     <button class="btn" type="submit">Send</button>
+                     <button id="btnSubmitMessage" class="btn" type="submit">Send</button>
                   </form>
                </div>
 
@@ -373,6 +374,7 @@
       </main>
 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+      <script src="js/sweetalert/sweetalert.min.js"></script>
       <script src="js/master.js"></script>
       <script src="js/charts.js"></script>
    </body>
