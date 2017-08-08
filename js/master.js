@@ -24,6 +24,8 @@ myBtnSubmitMessage.addEventListener('click', (event) => {
          swal({   title: "Something went wrong",   text: "It seems that you didn't write anything in the message",   type: "error",   confirmButtonText: "Got it" });
       } else {
          swal({   title: "Success",   text: "Your message was delivered",   type: "success", timer: "2000" });
+         myInputSelectUser.value = "";
+         myInputMessage.value = "";
       }
    }
 });
